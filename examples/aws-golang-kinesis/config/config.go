@@ -8,6 +8,6 @@ type Config struct {
 
 func NewConfig() *Config {
 	c := &Config{}
-	envconfig.MustProcess("", c)
+	envconfig.MustProcess(", c)
 	return c
 }

@@ -42,6 +42,6 @@ func (r *APIGatewayResponse) SetBody(b interface{}) {
 		return
 	}
 
-	bytes, _ := json.MarshalIndent(b, "", "")
+	bytes, _ := json.MarshalIndent(b, ", ")
 	r.Body = string(bytes)
 }
